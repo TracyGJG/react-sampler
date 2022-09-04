@@ -1,0 +1,100 @@
+.App > header {
+  background-color: #eee;
+  padding: 1rem;
+  margin-bottom: 1em;
+}
+
+main.Examples {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  text-align: center;
+}
+
+.examples > article {
+  min-height: 2em;
+  padding-block: 1em;
+}
+
+.ReleaseNotes {
+  text-align: left;
+}
+
+.ReleaseNotes h1 {
+  font-size: 1rem;
+}
+
+.ReleaseNotes h2 {
+  font-size: 0.9rem;
+}
+
+.ReleaseNotes h3 {
+  font-size: 0.8rem;
+}
+
+.MarkDown article {
+  border: 2px solid #000;
+  border-top-color: #ccc;
+  border-left-color: #ccc;
+  border-radius: 0.5em;
+  margin: 0.5rem;
+  padding: 0.5em;
+}
+
+.MarkDown:not(:first-of-type) header,
+.ReleaseNotes footer {
+  cursor: pointer;
+  color: blue;
+}
+
+.MarkDown:first-of-type header {
+  color: red;
+}
+
+.MarkDown header {
+  font-size: 1.25rem;
+}
+
+.ReleaseNotes footer {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.ReleaseNotes footer::before {
+  content: 'Show more...';
+}
+
+.ReleaseNotes.show-more footer::before {
+  content: 'Show less';
+}
+
+.ReleaseNotes.show-more .MarkDown:not(:first-of-type) {
+  display: block;
+}
+
+.ReleaseNotes .MarkDown:not(:first-of-type),
+.MarkDown .compressed :not(header, h1, ul, ol, li, li > *) {
+  display: none;
+}
+
+.MarkDown code {
+  font-size: 0.6em;
+  padding: 0.2em 0.4em;
+  border: 1px solid #333;
+  background-color: #ccc;
+  border-radius: 0.4em;
+  font-weight: bold;
+}
+
+.MarkDown ol,
+.MarkDown ul {
+  margin-block: 0.5em;
+  padding-left: 1em;
+}
+
+.MarkDown h1,
+.MarkDown h2,
+.MarkDown h3,
+.MarkDown p {
+  margin-block: 0.25em;
+}

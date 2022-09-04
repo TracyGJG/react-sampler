@@ -1,0 +1,26 @@
+{
+  "1.4.0": ["# Hello, *world*!", "Latest release note does not compress."],
+  "1.3.0": ["# Example One", "## Hello, *world*!"],
+  "1.2.0": ["# Example Two", "### Hello, *world*!"],
+  "1.1.1": ["# Example Three", "~~Strike-through~~"],
+  "1.1.0": ["# Example Four", "__Hello__, *world*!", "", "~~Strike-through~~"],
+  "1.0.1": [
+    "# Brand new button",
+    "---",
+    "New button `Ctrl + C` `Cmd + C`\n",
+    "New button `Ctrl + D` `Cmd + D`\n",
+    "New button `Ctrl + E` `Cmd + E`"
+  ],
+  "1.0.0": [
+    "1. ~~Strike-through~~",
+    "2. _Bullet-point 2_",
+    "- **Bold Text**",
+    "- *Italic text*\n",
+    "Lists are not hidden but text is."
+  ],
+  "0.1.0": [
+    "- [x] Write the press release",
+    "- [ ] Update the website",
+    "- [ ] Contact the media"
+  ]
+}
